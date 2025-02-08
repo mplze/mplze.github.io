@@ -1,0 +1,57 @@
+:root {
+    /* Professional Color Palette */
+    --primary: #2C3E50;    /* Deep Blue-Gray */
+    --secondary: #34495E;  /* Darker Blue-Gray */
+    --accent: #3498DB;     /* Bright Blue */
+    --background: #F5F6FA; /* Light Gray */
+    --text: #2C3E50;      /* Dark Blue-Gray */
+    --white: #FFFFFF;
+    --gray: #95A5A6;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.section {
+    padding: 5rem 0;
+    scroll-margin-top: 5rem;
+}
+
+/* Navigation */
+.nav-link {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills Tags */
+.skill-tag {
+    background: var(--background);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 0.25rem;
+    display: inline-block;
+}

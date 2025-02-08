@@ -1,235 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Mansoor Mohamed Ameen - Portfolio</title>
+    <title>Mohamed Mansoor Mohamed Ameen - Microsoft Dynamics Specialist</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .section {
-            scroll-margin-top: 80px;
-        }
-        .nav-link.active {
-            color: #3B82F6;
-            border-bottom: 2px solid #3B82F6;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <!-- Header -->
-    <header class="fixed top-0 w-full bg-white shadow-md z-50">
-        <nav class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4 md:mb-0">Mohamed Mansoor Mohamed Ameen</h1>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="nav-link px-3 py-2 hover:text-blue-500">About</a></li>
-                    <li><a href="#experience" class="nav-link px-3 py-2 hover:text-blue-500">Experience</a></li>
-                    <li><a href="#skills" class="nav-link px-3 py-2 hover:text-blue-500">Skills</a></li>
-                    <li><a href="#education" class="nav-link px-3 py-2 hover:text-blue-500">Education</a></li>
-                    <li><a href="#contact" class="nav-link px-3 py-2 hover:text-blue-500">Contact</a></li>
-                </ul>
+<body class="bg-light">
+    <!-- Header with Theme Toggle and Language Selector -->
+    <header class="fixed top-0 w-full bg-primary text-light shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">M.M.M. Ameen</h1>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Desktop Navigation -->
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <select class="bg-transparent">
+                            <option value="en">EN</option>
+                            <option value="sv">SV</option>
+                            <option value="ta">TA</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Resume Download -->
+                    <a href="resume.pdf" class="btn btn-outline">
+                        <i class="fas fa-download mr-2"></i>Resume
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-24">
-        <!-- About Section -->
-        <section id="about" class="section space-y-6 mb-16">
-            <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
-            <div class="bg-white rounded-lg shadow p-6">
-                <p class="text-gray-600 leading-relaxed">
-                    A hands-on Microsoft Dynamics specialist with over 13 years of experience in Business
-                    Central, NAV, and Dynamics 365. As a certified Business Central Functional Consultant,
-                    I've successfully led cloud migration projects and complex system integrations at NAKDCOM
-                    ONE WORLD AB, ensuring smooth transitions from on-premise to online solutions.
-                </p>
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                    I bring both strong technical skills and business understanding, having designed custom
-                    solutions for retail, manufacturing, textile, and service industries. My expertise
-                    includes cloud migrations, system integrations, solution design, and team leadership.
-                </p>
-                <div class="mt-6 flex space-x-4">
-                    <a href="https://www.linkedin.com/in/mansoorlk/" class="text-gray-600 hover:text-gray-900">
-                        <i class="fab fa-linkedin fa-2x"></i>
+    <!-- Hero Section with Professional Background -->
+    <section class="hero min-h-screen bg-gradient-to-r from-primary to-secondary text-light flex items-center">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl font-bold mb-4">Microsoft Dynamics Specialist</h1>
+                    <p class="text-xl mb-6">13+ years of experience in Business Central & NAV</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-pattern opacity-10"></div>
+                    <img src="me.jfif" alt="Profile" class="rounded-full w-64 h-64 mx-auto border-4 border-accent shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Timeline -->
+    <section id="projects" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="timeline">
+                <!-- Mobile App Development -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Mobile App Development</h3>
+                        <p class="text-gray-600 mb-4">Description of the mobile app project...</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Business Central</span>
+                            <span class="tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSRS PI Portal -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">SSRS PI Portal</h3>
+                        <p class="text-gray-600 mb-4">Description of the SSRS PI Portal project...</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">SSRS</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fleet Management Power App -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Fleet Management Power App</h3>
+                        <p class="text-gray-600 mb-4">Description of the Fleet Management project...</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Power Apps</span>
+                            <span class="tag">Power Automate</span>
+                            <span class="tag">SharePoint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills with Interactive Visualization -->
+    <section id="skills" class="py-20 bg-secondary">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-light">Skills & Expertise</h2>
+            
+            <!-- Technical Skills -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-6">Technical Skills</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span>Business Central</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <!-- Add more skill bars -->
+                    </div>
+                </div>
+
+                <!-- Skill Tree -->
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-6">Expertise Areas</h3>
+                    <div id="skill-tree"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Get in Touch</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <a href="mailto:mplze@yahoo.com">mplze@yahoo.com</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span>(+46) 765500867</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>Helsingborg, Sweden</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-light py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 Mohamed Mansoor Mohamed Ameen</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/mansoorlk/" class="hover:text-accent">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:mplze@yahoo.com" class="text-gray-600 hover:text-gray-900">
-                        <i class="fas fa-envelope fa-2x"></i>
+                    <a href="mailto:mplze@yahoo.com" class="hover:text-accent">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section space-y-6 mb-16">
-            <h2 class="text-3xl font-bold text-gray-800">Work Experience</h2>
-            <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Senior NAV Developer - Dynamics NAV/Business Central</h3>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-gray-600">Nakdcom One World AB</span>
-                        <span class="text-gray-500 text-sm">2022 - Present</span>
-                    </div>
-                    <div class="mt-2 text-gray-500">Gothenburg, Sweden</div>
-                    <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
-                        <li>Providing expert consultation and support for ERP system integrations, customizations, and upgrades</li>
-                        <li>Collaborating with stakeholders to understand business requirements</li>
-                        <li>Conducting comprehensive analyses of business processes and systems</li>
-                        <li>Staying updated with latest developments in Microsoft Business Central</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Senior Technical Lead</h3>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-gray-600">Ascentic Pvt Ltd</span>
-                        <span class="text-gray-500 text-sm">2020 - 2021</span>
-                    </div>
-                    <div class="mt-2 text-gray-500">Colombo, Sri Lanka</div>
-                    <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
-                        <li>Led technical teams in designing and deploying customized solutions</li>
-                        <li>Provided mentorship to junior team members</li>
-                        <li>Introduced new architectural solutions for business process optimization</li>
-                        <li>Served as subject matter expert on Microsoft Dynamics Business Central</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section space-y-6 mb-16">
-            <h2 class="text-3xl font-bold text-gray-800">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Technical Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Microsoft Business Central</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Microsoft Dynamics NAV</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure DevOps</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Power Platform</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL Server</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">LS Retail</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Git & GitHub</span>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Management Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Project Management</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Team Leadership</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Strategic Planning</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Change Management</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Business Process Optimization</span>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6 md:col-span-2">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Languages</h3>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="text-center p-3 bg-gray-50 rounded">
-                            <div class="font-semibold text-gray-800">English</div>
-                            <div class="text-sm text-gray-600">C2 (Proficient)</div>
-                        </div>
-                        <div class="text-center p-3 bg-gray-50 rounded">
-                            <div class="font-semibold text-gray-800">Sinhala</div>
-                            <div class="text-sm text-gray-600">Native</div>
-                        </div>
-                        <div class="text-center p-3 bg-gray-50 rounded">
-                            <div class="font-semibold text-gray-800">Tamil</div>
-                            <div class="text-sm text-gray-600">C2 Speaking, A2 Writing</div>
-                        </div>
-                        <div class="text-center p-3 bg-gray-50 rounded">
-                            <div class="font-semibold text-gray-800">Swedish</div>
-                            <div class="text-sm text-gray-600">A1 (Basic)</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section space-y-6 mb-16">
-            <h2 class="text-3xl font-bold text-gray-800">Education & Certifications</h2>
-            <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Microsoft Dynamics 365 Business Central Functional Consultant</h3>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-gray-600">Microsoft</span>
-                        <span class="text-gray-500 text-sm">2020 - 2024</span>
-                    </div>
-                    <a href="https://www.credly.com/badges/210044be-ca9c-4383-83ac-0259cf73676c" 
-                       class="mt-4 inline-flex items-center text-blue-500 hover:text-blue-600">
-                        View Credential <i class="fas fa-external-link-alt ml-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Postgraduate Diploma in Information Technology</h3>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-gray-600">Sri Lanka Institute of Information Technology</span>
-                        <span class="text-gray-500 text-sm">2014 - 2015</span>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-xl font-semibold text-gray-800">Bachelor of Science in Information Technology</h3>
-                    <div class="mt-2 flex justify-between items-center">
-                        <span class="text-gray-600">Sri Lanka Institute of Information Technology</span>
-                        <span class="text-gray-500 text-sm">2008 - 2012</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section space-y-6">
-            <h2 class="text-3xl font-bold text-gray-800">Contact</h2>
-            <div class="bg-white rounded-lg shadow p-6">
-                <div class="space-y-4">
-                    <div class="flex items-center space-x-4">
-                        <i class="fas fa-envelope text-gray-600 fa-lg"></i>
-                        <a href="mailto:mplze@yahoo.com" class="text-blue-500 hover:text-blue-600">
-                            mplze@yahoo.com
-                        </a>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <i class="fab fa-linkedin text-gray-600 fa-lg"></i>
-                        <a href="https://www.linkedin.com/in/mansoorlk/" class="text-blue-500 hover:text-blue-600">
-                            linkedin.com/in/mansoorlk
-                        </a>
-                    </div>
-                    <div class="mt-6 text-gray-600">
-                        <p>Location: Helsingborg, Sweden</p>
-                        <p class="mt-2">Phone: (+46) 765500867</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Highlight active section in navigation
-        const sections = document.querySelectorAll('.section');
-        const navLinks = document.querySelectorAll('.nav-link');
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
 
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= sectionTop - 180) {
-                    current = section.getAttribute('id');
-                }
-            });
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.setAttribute('data-theme', 
+                document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light'
+            );
+        });
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
+        // Mobile Menu
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-nav');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>
