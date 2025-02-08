@@ -3,192 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mansoor Ameen - Microsoft Dynamics Specialist</title>
+    <title>Mohamed Mansoor Mohamed Ameen - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .project-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
+        .section {
+            scroll-margin-top: 80px;
+        }
+        .nav-link.active {
+            color: #3B82F6;
+            border-bottom: 2px solid #3B82F6;
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="max-w-6xl mx-auto px-4 py-16">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h1 class="text-4xl font-bold mb-4">Mohamed Mansoor Mohamed Ameen</h1>
-                    <p class="text-xl mb-6">Microsoft Dynamics Specialist</p>
-                    <p class="mb-6">13+ years of experience in Business Central, NAV, and Dynamics 365</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/mansoorlk/" class="bg-white text-blue-800 px-4 py-2 rounded-lg hover:bg-blue-50">
-                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                        </a>
-                        <a href="mailto:mplze@yahoo.com" class="bg-white text-blue-800 px-4 py-2 rounded-lg hover:bg-blue-50">
-                            <i class="fas fa-envelope mr-2"></i>Contact
-                        </a>
-                    </div>
-                </div>
-                <div class="text-center md:text-right">
-                    <img src="/api/placeholder/400/400" alt="Profile" class="rounded-full inline-block">
-                </div>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800 mb-4 md:mb-0">Mohamed Mansoor Mohamed Ameen</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="nav-link px-3 py-2 hover:text-blue-500">About</a></li>
+                    <li><a href="#experience" class="nav-link px-3 py-2 hover:text-blue-500">Experience</a></li>
+                    <li><a href="#skills" class="nav-link px-3 py-2 hover:text-blue-500">Skills</a></li>
+                    <li><a href="#education" class="nav-link px-3 py-2 hover:text-blue-500">Education</a></li>
+                    <li><a href="#contact" class="nav-link px-3 py-2 hover:text-blue-500">Contact</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12">
-        <!-- Featured Projects -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1: Cloud Migration -->
-                <div class="bg-white rounded-lg shadow-lg p-6 project-card">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-cloud text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Cloud Migration Project</h3>
-                    <p class="text-gray-600 mb-4">Led successful migration of on-premise NAV to Business Central cloud for major retail client.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Business Central</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Migration</span>
-                    </div>
-                </div>
-
-                <!-- Project 2: Retail Solution -->
-                <div class="bg-white rounded-lg shadow-lg p-6 project-card">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-shopping-cart text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Retail Management Solution</h3>
-                    <p class="text-gray-600 mb-4">Developed custom retail solution integrating LS Retail with Business Central for 40+ stores.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">LS Retail</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Business Central</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">POS</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: System Integration -->
-                <div class="bg-white rounded-lg shadow-lg p-6 project-card">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-code-branch text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">System Integration Project</h3>
-                    <p class="text-gray-600 mb-4">Implemented complex integration between Business Central and external systems.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">API Integration</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure Functions</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Power Automate</span>
-                    </div>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-24">
+        <!-- About Section -->
+        <section id="about" class="section space-y-6 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800">About Me</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <p class="text-gray-600 leading-relaxed">
+                    A hands-on Microsoft Dynamics specialist with over 13 years of experience in Business
+                    Central, NAV, and Dynamics 365. As a certified Business Central Functional Consultant,
+                    I've successfully led cloud migration projects and complex system integrations at NAKDCOM
+                    ONE WORLD AB, ensuring smooth transitions from on-premise to online solutions.
+                </p>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    I bring both strong technical skills and business understanding, having designed custom
+                    solutions for retail, manufacturing, textile, and service industries. My expertise
+                    includes cloud migrations, system integrations, solution design, and team leadership.
+                </p>
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://www.linkedin.com/in/mansoorlk/" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="mailto:mplze@yahoo.com" class="text-gray-600 hover:text-gray-900">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Expertise -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Areas of Expertise</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+        <!-- Experience Section -->
+        <section id="experience" class="section space-y-6 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800">Work Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Senior NAV Developer - Dynamics NAV/Business Central</h3>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-gray-600">Nakdcom One World AB</span>
+                        <span class="text-gray-500 text-sm">2022 - Present</span>
+                    </div>
+                    <div class="mt-2 text-gray-500">Gothenburg, Sweden</div>
+                    <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
+                        <li>Providing expert consultation and support for ERP system integrations, customizations, and upgrades</li>
+                        <li>Collaborating with stakeholders to understand business requirements</li>
+                        <li>Conducting comprehensive analyses of business processes and systems</li>
+                        <li>Staying updated with latest developments in Microsoft Business Central</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Senior Technical Lead</h3>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-gray-600">Ascentic Pvt Ltd</span>
+                        <span class="text-gray-500 text-sm">2020 - 2021</span>
+                    </div>
+                    <div class="mt-2 text-gray-500">Colombo, Sri Lanka</div>
+                    <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
+                        <li>Led technical teams in designing and deploying customized solutions</li>
+                        <li>Provided mentorship to junior team members</li>
+                        <li>Introduced new architectural solutions for business process optimization</li>
+                        <li>Served as subject matter expert on Microsoft Dynamics Business Central</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section space-y-6 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Technical Skills</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Microsoft Business Central</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Dynamics NAV</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Microsoft Dynamics NAV</span>
                         <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure DevOps</span>
                         <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Power Platform</span>
                         <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL Server</span>
                         <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">LS Retail</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Git & GitHub</span>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Industry Experience</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Retail & E-commerce Solutions</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Manufacturing Systems</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Service Industry Applications</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Textile Industry Solutions</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Travel Industry Systems</li>
-                    </ul>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Management Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Project Management</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Team Leadership</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Strategic Planning</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Change Management</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Business Process Optimization</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6 md:col-span-2">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Languages</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="text-center p-3 bg-gray-50 rounded">
+                            <div class="font-semibold text-gray-800">English</div>
+                            <div class="text-sm text-gray-600">C2 (Proficient)</div>
+                        </div>
+                        <div class="text-center p-3 bg-gray-50 rounded">
+                            <div class="font-semibold text-gray-800">Sinhala</div>
+                            <div class="text-sm text-gray-600">Native</div>
+                        </div>
+                        <div class="text-center p-3 bg-gray-50 rounded">
+                            <div class="font-semibold text-gray-800">Tamil</div>
+                            <div class="text-sm text-gray-600">C2 Speaking, A2 Writing</div>
+                        </div>
+                        <div class="text-center p-3 bg-gray-50 rounded">
+                            <div class="font-semibold text-gray-800">Swedish</div>
+                            <div class="text-sm text-gray-600">A1 (Basic)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Professional Experience -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Professional Experience</h2>
+        <!-- Education Section -->
+        <section id="education" class="section space-y-6 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800">Education & Certifications</h2>
             <div class="space-y-6">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Senior NAV Developer</h3>
-                            <p class="text-gray-600">Nakdcom One World AB</p>
-                        </div>
-                        <span class="text-gray-500">2022 - Present</span>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Microsoft Dynamics 365 Business Central Functional Consultant</h3>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-gray-600">Microsoft</span>
+                        <span class="text-gray-500 text-sm">2020 - 2024</span>
                     </div>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Lead system integrations and cloud migrations</li>
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Optimize internal processes through customized solutions</li>
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Provide technical leadership and mentorship</li>
-                    </ul>
+                    <a href="https://www.credly.com/badges/210044be-ca9c-4383-83ac-0259cf73676c" 
+                       class="mt-4 inline-flex items-center text-blue-500 hover:text-blue-600">
+                        View Credential <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold">Senior Technical Lead</h3>
-                            <p class="text-gray-600">Ascentic Pvt Ltd</p>
-                        </div>
-                        <span class="text-gray-500">2020 - 2021</span>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Postgraduate Diploma in Information Technology</h3>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-gray-600">Sri Lanka Institute of Information Technology</span>
+                        <span class="text-gray-500 text-sm">2014 - 2015</span>
                     </div>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Led development of vertical solutions</li>
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Managed international team collaboration</li>
-                        <li><i class="fas fa-angle-right text-blue-500 mr-2"></i>Implemented architectural improvements</li>
-                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Bachelor of Science in Information Technology</h3>
+                    <div class="mt-2 flex justify-between items-center">
+                        <span class="text-gray-600">Sri Lanka Institute of Information Technology</span>
+                        <span class="text-gray-500 text-sm">2008 - 2012</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                        <div class="space-y-4">
-                            <p><i class="fas fa-envelope text-blue-600 mr-2"></i>mplze@yahoo.com</p>
-                            <p><i class="fas fa-phone text-blue-600 mr-2"></i>(+46) 765500867</p>
-                            <p><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>Helsingborg, Sweden</p>
-                        </div>
+        <!-- Contact Section -->
+        <section id="contact" class="section space-y-6">
+            <h2 class="text-3xl font-bold text-gray-800">Contact</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-envelope text-gray-600 fa-lg"></i>
+                        <a href="mailto:mplze@yahoo.com" class="text-blue-500 hover:text-blue-600">
+                            mplze@yahoo.com
+                        </a>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Professional Profiles</h3>
-                        <div class="space-y-4">
-                            <p>
-                                <a href="https://www.linkedin.com/in/mansoorlk/" class="text-blue-600 hover:text-blue-800">
-                                    <i class="fab fa-linkedin mr-2"></i>LinkedIn Profile
-                                </a>
-                            </p>
-                            <p>
-                                <a href="https://www.credly.com/badges/210044be-ca9c-4383-83ac-0259cf73676c" class="text-blue-600 hover:text-blue-800">
-                                    <i class="fas fa-certificate mr-2"></i>Microsoft Certification
-                                </a>
-                            </p>
-                        </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-linkedin text-gray-600 fa-lg"></i>
+                        <a href="https://www.linkedin.com/in/mansoorlk/" class="text-blue-500 hover:text-blue-600">
+                            linkedin.com/in/mansoorlk
+                        </a>
+                    </div>
+                    <div class="mt-6 text-gray-600">
+                        <p>Location: Helsingborg, Sweden</p>
+                        <p class="mt-2">Phone: (+46) 765500867</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white mt-12">
-        <div class="max-w-6xl mx-auto px-4 py-8">
-            <p class="text-center">© 2024 Mohamed Mansoor Mohamed Ameen. All rights reserved.</p>
-        </div>
-    </footer>
+    <script>
+        // Highlight active section in navigation
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 180) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
