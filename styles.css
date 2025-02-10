@@ -1,12 +1,13 @@
 :root {
     /* Professional Color Palette */
-    --primary: #2C3E50;    /* Deep Blue-Gray */
-    --secondary: #34495E;  /* Darker Blue-Gray */
-    --accent: #3498DB;     /* Bright Blue */
+    --primary: #efeff1;    /* Deep Blue-Gray */
+    --secondary: #f7f7f7;  /* Darker Blue-Gray */
+    --accent: #8976b4;     /* Bright Blue */
     --background: #F5F6FA; /* Light Gray */
-    --text: #2C3E50;      /* Dark Blue-Gray */
-    --white: #FFFFFF;
+    --text: #000203;      /* Dark Blue-Gray */
+    --white: #570707;
     --gray: #95A5A6;
+    --black: #000305;
 }
 
 /* Base Styles */
@@ -34,6 +35,45 @@ body {
     border-bottom: 2px solid var(--accent);
 }
 
+/* Mobile Navigation */
+.mobile-nav {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: var(--black);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--accent), 10%);
+}
+
+.btn-outline {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
 /* Cards */
 .card {
     background: var(--white);
@@ -54,4 +94,33 @@ body {
     border-radius: 4px;
     margin: 0.25rem;
     display: inline-block;
+}
+
+/* Skill Bars */
+.skill-bar {
+    background-color: var(--gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background-color: var(--accent);
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Text Alignment */
+.text-xl {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--accent);
 }
